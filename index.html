@@ -3,10 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portofolio</title>
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    
+    <header class="main-header">
+        
+        <div class="logo-icon"></div>
+        
+        <nav>
+            <a href="#section-home">Home</a>
+            <a href="#section-our-profile">Our Profile</a>
+            <a href="#section-portofolio">Portofolio</a>
+            <a href="#section-message-us">Message Us</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <!-- Home -->
+        <section id="section-home">
+            <header>
+                <h1>Hi <span id="name"></span>, Welcome to My Portofolio!</h1>
+                <button id="tombol">Ganti Nama</button>
+                <script src="js/script.js" defer></script>
+            </header>
+            <article>
+                <p>Temukan proyek dan keterampilan saya di bawah ini!</p>
+                <!--photo banner-->
+                <div class="photo-banner photo-1"></div>
+                <div class="photo-banner photo-2"></div>
+                <div class="photo-banner photo-3"></div>
+                <script src="js/script.js" defer></script>
+            </article>
+        </section>
+
+        <hr>
+        <!-- Our Profile -->
+        <section id="section-our-profile">
+            <header>
+                <h1>My Profile</h1>
+            </header>
+            
+            <div class="profile-icon-container">
+                <div>       
+                <div class="profile-icon1"></div>
+                    <h4>Profile 1</h4>
+                </div>
+                
+                <div>
+                    <div class="profile-icon2"></div>
+                    <h4>Profile 2</h4>
+                </div>
+            </div>
+            <article></article>
+                <p>Halo, saya Ela Afitria, seorang mahasiswa di Universitas Bengkulu, program studi Sistem Informasi, Fakultas Teknik. Saat ini, saya sedang mendalami berbagai aspek teknologi informasi, khususnya dalam pengembangan sistem yang dapat membantu memecahkan masalah di berbagai sektor.
+
+                    Sebagai seorang mahasiswa Sistem Informasi, saya tertarik untuk memahami bagaimana teknologi dapat diintegrasikan dengan kebutuhan bisnis dan masyarakat, serta bagaimana data dan informasi dapat dikelola untuk memberikan solusi yang efektif dan efisien.
+                    
+                    Selama masa studi, saya telah mengerjakan beberapa proyek, termasuk Sistem Monitoring Gizi Buruk Anak dan Sistem Informasi Manajemen Organisasi Mahasiswa, yang semakin mengasah keterampilan saya dalam pengembangan aplikasi dan sistem informasi.</p>
+            </article>
+        </div>
+        </section>
+        
+        <hr>
+        <!-- Portofolio -->
+        <section id="section-portofolio">
+            <header>
+                <h1>Portofolio</h1>
+            </header>
+            <div class="portfolio-container"></div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img project-1"></div>
+                    <h4>Project 1</h4>
+                    <h4>Sistem Informasi Monitoring Gizi Buruk Anak</h4>
+                    <p>Proyek ini merupakan platform yang dirancang untuk memantau 
+                        status gizi anak-anak, khususnya di daerah yang rawan gizi
+                        buruk. Sistem ini memungkinkan petugas kesehatan untuk mencatat, 
+                        memantau, dan menganalisis data terkait gizi anak-anak secara real-time.</p>
+                    <p>Bahasa Pemrograman : PHP, MySQL, JavaScript</p>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-img project-2"></div>
+                    <h4>Project 1</h4>
+                    <h4>Sistem Informasi Manajemen Organisasi Mahasiswa</h4>
+                    <p>Sistem ini dikembangkan untuk mempermudah pengelolaan administrasi dan 
+                        kegiatan organisasi mahasiswa di berbagai universitas. Dengan sistem ini, 
+                        pengurus organisasi dapat mengelola data anggota, kegiatan, hingga laporan 
+                        keuangan secara lebih efisien. Selain itu, sistem ini juga memberikan akses 
+                        bagi anggota untuk berpartisipasi dalam aktivitas organisasi melalui platform online.</p>
+                    <p>Bahasa Pemrograman : PHP, MySQL, JavaScript</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <!-- Message Us -->
+        <section id="section-message-us">
+            <header>
+                <h1>Message Us!</h1>
+            </header>
+            <div class="container">
+                <div class="form-container">
+                    <form id="messageId" class="messageForm" onsubmit="return false;">
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" name="nama" required>
+            
+                        <label for="tanggalLahir">Tanggal Lahir:</label>
+                        <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+            
+                        <label>Jenis Kelamin:</label>
+                        <div class="gender">
+                            <input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-Laki" checked>
+                            <label for="lakiLaki">Laki-Laki</label>
+            
+                            <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+            
+                        <label for="pesan">Pesan:</label>
+                        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            
+                        <button type="submit" onclick="validateForm()" id="submit">Submit</button>
+                    </form>
+                </div>
+            
+                <div class="output-container">
+                    <h3>Current time: <span id="currentTime"></span></h3>
+                    <p id="output" class="kotak"></p>
+                </div>
+                <script src="script.js"></script>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Ela Afitria Islami</p>
+    </footer>    
 </body>
 </html>

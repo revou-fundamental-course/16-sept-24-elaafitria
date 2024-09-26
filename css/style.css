@@ -1,1 +1,244 @@
 /* Ini CSS */
+.logo-icon{
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/photo2.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap; /* Agar link navigasi rapih jika ruang terbatas */
+}
+
+nav > a{
+    border: 1px solid;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+    margin: 5px; /* Beri sedikit margin agar tidak terlalu berhimpitan */
+}
+
+.photo-banner{
+    height: 480px;
+    background-position: center;
+    background-size: cover;
+    width: 100%; /* Agar gambar memenuhi lebar kontainer */
+}
+
+.profile-icon1{
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/photo2.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+}
+.profile-icon2{
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/photo3.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+}
+
+.profile-icon-container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap; /* Responsif: ikon bisa turun jika layar kecil */
+}
+
+.profile-icon-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 30px;
+}
+
+.form-container, .output-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    color: #333;
+}
+
+input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.gender {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#currentTime {
+    font-weight: bold;
+}
+
+p {
+    color: #333;
+    line-height: 1.8;
+    padding: 9px;
+    display: contents;
+}
+
+.kotak{
+    border: 1px solid;
+    height: 300px;
+    width: 100%; /* Agar kotak bisa menyesuaikan dengan lebar kontainer */
+    max-width: 450px;
+}
+
+.messageForm{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.photo-1{
+    background-image: url(../assets/foto1.jpeg);
+}
+
+.photo-2 {
+    background-image: url(../assets/foto2.jpeg);
+}
+
+.photo-3 {
+    background-image: url(../assets/foto3.jpeg);
+}
+
+/* Media Query untuk Responsif */
+@media screen and (max-width: 1024px) {
+    .container {
+        gap: 20px;
+    }
+
+    .form-container, .output-container {
+        width: 100%; /* Form dan output akan berada di satu kolom */
+    }
+
+    .photo-banner {
+        height: 350px; /* Sesuaikan tinggi gambar di layar yang lebih kecil */
+    }
+
+    .kotak {
+        height: 250px; /* Sesuaikan tinggi kotak */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-header {
+        flex-direction: column; /* Header menjadi vertikal pada layar lebih kecil */
+        align-items: flex-start;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav > a {
+        width: 100%; /* Link navigasi memenuhi lebar layar */
+        text-align: center;
+    }
+
+    .container {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .photo-banner {
+        height: 250px; /* Tinggi banner lebih kecil */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    input[type="text"], input[type="date"], textarea {
+        padding: 8px;
+    }
+
+    .photo-banner {
+        height: 200px; /* Sesuaikan tinggi gambar */
+    }
+
+    .profile-icon {
+        height: 40px;
+        width: 40px; /* Ukuran ikon profil lebih kecil */
+    }
+
+    .kotak {
+        height: 200px;
+        width: 100%;
+    }
+}
